@@ -25,7 +25,7 @@ namespace LINQ
 
             var sortedGames = videoGames.OrderBy(game => game);
 
-             //Linq Method
+            // Linq Method
 
             gameNames.Sort((a,b) => a.Length.CompareTo(b.Length));
 
@@ -33,7 +33,7 @@ namespace LINQ
             {
                 Console.WriteLine(game);
             }
-            
+
             // Lambda expression 
 
             var numGamesLambda = videoGames.Count(game => true);
