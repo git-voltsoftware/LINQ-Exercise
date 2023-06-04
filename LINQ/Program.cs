@@ -21,14 +21,19 @@ namespace LINQ
                 "Grand Theft Auto V"
             };
 
+            // Order By
+
             var sortedGames = videoGames.OrderBy(game => game);
+
+             //Linq Method
+
+            gameNames.Sort((a,b) => a.Length.CompareTo(b.Length));
 
             foreach (var game in sortedGames)
             {
                 Console.WriteLine(game);
             }
-
-
+            
             // Lambda expression 
 
             var numGamesLambda = videoGames.Count(game => true);
